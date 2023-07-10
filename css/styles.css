@@ -653,6 +653,7 @@ img {
 .container-footer {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   /* background-color: rgb(216, 141, 98);
   width: 264px;
   display: block;
@@ -721,6 +722,9 @@ img {
 }
 .social-icon-footer {
   fill: var(--cloud);
+}
+.logo-social {
+  display: flex;
 }
 
 /* Modal window */
