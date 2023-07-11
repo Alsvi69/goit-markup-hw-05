@@ -442,13 +442,15 @@
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-label">Comment</span>
-                    <input class="modal-form-input" type="text" name="user_comment">
+                    <!-- <textarea class="modal-form-comment" type="text" name="user_comment" placeholder="Text input"> -->
+                    <textarea class="modal-form-comment" name="user_comment" id="" cols="30" rows="10"
+                        placeholder="Text input"></textarea>
                 </label>
                 <label class="modal-form-agreement">
                     <input class="modal-form-checkbox visually-hidden" type="checkbox">
                     <span class="modal-form-custom-checkbox">
                         <svg class="modal-form-checkbox-icon" width="10" height="10">
-                            <use href="./images/icons.svg#icon-checked"></use>
+                            <use href="./images/icons.svg#click-check"></use>
                         </svg>
                     </span>
                     <span class="modal-form-agreement-desc">
@@ -456,7 +458,7 @@
                         <a class="modal-form-link" href="#">Privacy Policy</a>
                     </span>
                 </label>
-                <button class="btn accent-btn" type="submit">Send</button>
+                <button class="button accent-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
