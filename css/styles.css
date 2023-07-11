@@ -727,6 +727,75 @@ img {
 .logo-social {
   display: flex;
 }
+/* .footer-subscribe {
+  display: flex;
+} */
+.footer-subscribe-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--background-color-white);
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: var(--title-color);
+  padding-left: 16px;
+
+  color: var(--background-color-white);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+
+.footer-subscribe-btn {
+  /* 
+  padding: 8px 24px;
+  align-items: center;
+  justify-content: center;
+  
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--logo-color);
+  color: var(--background-color-white);
+  /* width: 117px; */
+  /* height: 24px; */
+  display: inline-flex;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-size: 16px; */
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--anim);
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--dark-blue-color);
+}
+
+.footer-btn-icon {
+  fill: var(--background-color-white);
+}
 
 /* Modal window */
 .backdrop {
@@ -949,7 +1018,28 @@ img {
   color: var(--logo-color);
   text-decoration: underline;
 }
-.accent-btn {
+.modal-btn-send {
+  margin: 0 auto;
+  display: block;
+  padding: 16px 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  background: #4d5ae5;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 auto;
+  transition: background-color var(--anim);
+}
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background: var(--dark-blue-color);
+}
+/* .accent-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -966,4 +1056,4 @@ img {
   margin: 0 auto;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
