@@ -885,6 +885,10 @@ img {
   position: relative;
   margin-bottom: 8px;
 }
+.modal-form-label-comment {
+  position: relative;
+  margin-bottom: 16px;
+}
 .modal-form-field {
   display: block;
   position: relative;
@@ -968,7 +972,7 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 .modal-form-checkbox {
 }
