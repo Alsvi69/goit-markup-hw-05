@@ -1003,19 +1003,6 @@ img {
   fill: var(--cloud);
 }
 .modal-form-checkbox-icon {
-  /* fill: #2e2f42; */
-  /* stroke: #2e2f42; */
-  opacity: 0;
-  transform: scale(0.3);
-  transition: opacity 300ms cubic-bezier(0, 0, 1, 1.8) 150ms,
-    transform 300ms cubic-bezier(0, 0, 1, 1.8) 150ms;
-  /* width: 10;
-  height: 8px; */
-  border-radius: 2px;
-  /* border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4)); */
-  fill: var(--dark-blue-color);
-  stroke-width: 1px;
-  stroke: var(--dark-blue-color);
 }
 .modal-form-checkbox:checked
   + .modal-form-custom-checkbox
