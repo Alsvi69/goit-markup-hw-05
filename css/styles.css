@@ -11,7 +11,7 @@
   --cloud: #f4f4fd;
   --lightslate: #8e8f99;
   --green: #31d0aa;
-  --navyblue-modal: rgba(46, 47, 66, 0.4);
+  --navyblue-modal: #2e2f4266;
   --dairy: #fcfcfc;
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -654,7 +654,7 @@ img {
 .container-footer {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* background-color: rgb(216, 141, 98);
   width: 264px;
   display: block;
@@ -724,12 +724,10 @@ img {
 .social-icon-footer {
   fill: var(--cloud);
 }
-.logo-social {
-  display: flex;
+
+.footer-subscribe {
+  margin-left: auto;
 }
-/* .footer-subscribe {
-  display: flex;
-} */
 .footer-subscribe-title {
   font-weight: 500;
   line-height: 1.5;
@@ -889,30 +887,19 @@ img {
   margin-bottom: 8px;
 }
 .modal-form-label {
-  display: block;
-  margin-bottom: 4px;
-
-  color: var(--lightslate, #8e8f99);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
+  position: relative;
+  margin-bottom: 8px;
 }
-.modal-form-input {
-  /* display: block; */
-  width: 100%;
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
-  padding-left: 38px;
 
+.modal-form-input {
+  width: 100%;
   height: 40px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   border-radius: 4px;
-  /* border: 1px solid var(--iris, #4d5ae5); */
-  border: 1px solid var(--navyblue-modal, #2e2f4266);
-  /* transition: border-color var(--anim); */
-  transition: background-color var(--anim);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -928,12 +915,18 @@ img {
 
 .modal-form-icon {
   position: absolute;
+  top: 50%;
   left: 16px;
-  bottom: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transform: translateY(-50%); */
+  /* position: absolute; */
+  /* left: 16px;
+  bottom: 8px; */
+  /* transform: translateY(-50%);
 
   fill: #2e2f42;
   stroke: none;
-  transition: stroke var(--anim);
+  transition: stroke var(--anim); */
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -961,6 +954,10 @@ img {
 }
 .modal-form-comment::placeholder {
   color: currentColor;
+  color: var(--navyblue-modal);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
 }
 
 .modal-form-agreement {
